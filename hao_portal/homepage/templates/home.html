@@ -1,0 +1,55 @@
+{% extends "template.html" %}
+{% block page_content %}
+<body>
+<div class="wrapper">
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo">
+               Senhe Hao
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#" class="menuselector">Home</a></li>
+                    <li><a href="#" class="menuselector">Projects</a></li>
+                    <li><a href="#" class="menuselector">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <p class="intro">
+            Hello!
+        </p>
+        <br>
+        <hr>
+        <br>
+        <p class="info">
+            I'm Senhe Hao, a freshman at TAMU studying computer science. I enjoy doing a wide variety of things such as programming, math, playing the trumpet, writing, animation, reading, and playing video games. One of my favorite things to do is solve problems. To me there's no better feeling then what you get after finally solving something that's been frustrating you for hours. An example would be this website. This website is a massive problem. I'm not even sure I'm doing all of this right, but it seems to be working perfectly fine. Funny part is that getting the favicon to work took more time than actually making this website.
+        </p>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $(document).ready(function() {
+        $(".menu-icon").on("click", function() {
+            $("nav ul").toggleClass("showing");
+        });
+    });
+
+    // Scrolling Effect
+
+    $(window).on("scroll", function() {
+        if($(window).scrollTop()) {
+            $('nav').addClass('black');
+        }
+
+        else {
+            $('nav').removeClass('black');
+        }
+    })
+</script>
+{% endblock %}
