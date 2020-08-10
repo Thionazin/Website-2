@@ -21,7 +21,7 @@ html, body {
     }
 
     .menu {
-        font-weight: 500;
+        font-weight: 300;
     }
 
     .content {
@@ -30,7 +30,40 @@ html, body {
         font-size: 20px;
         line-height: 30px;
         text-align: justify;
+    }
 
+    .resume-area {
+        background-image: url(https://i2.wp.com/www.brittanymthiessen.com/wp-content/uploads/2017/09/IMG_0357.jpg);
+        height: 320px;
+        line-height: 30px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+
+    .resume-title {
+        font-size: 36px;
+        color: white;
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 70px;
+        font-weight: 100;
+    }
+
+    .resume-link {
+
+    }
+
+    .resume-line {
+        width: 200px;
+        border: 2px solid white;
+    }
+
+    .info-sep {
+        width: 200px;
+        border: 2px solid black;
     }
 
     .info {
@@ -38,6 +71,60 @@ html, body {
     }
 
     .intro {
+        text-align: center;
+        font-size: 54px;
+    }
+
+    .links {
+        background-image: url(https://i2.wp.com/www.brittanymthiessen.com/wp-content/uploads/2017/09/IMG_0357.jpg);
+        height: 320px;
+        line-height: 30px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+
+    .typ-subhed {
+        font-family: 'Oswald', sans-serif !important;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 0;
+    }
+
+    .ctrl-standard.fx-sliderIn {
+        color: white;
+        border-color: white;
+        background: none;
+        font-family: 'Oswald', sans-serif !important;
+        font-weight: 300;
+    }
+
+    .ctrl-standard.fx-sliderIn::after {
+        background: white;
+    }
+
+    .links-title {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 36px;
+        color: white;
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 70px;
+        font-weight: 100;
+    }
+
+    .more-abt-content {
+        text-align: center;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .more-abt-title {
         text-align: center;
         font-size: 54px;
     }
@@ -55,6 +142,7 @@ html, body {
 
     nav {
         position: fixed;
+        z-index: 2;
         width: 100%;
         line-height: 60px;
     }
@@ -87,6 +175,10 @@ html, body {
         font-size: 16px;
     }
 
+    .footer {
+        text-align: center;
+    }
+
     .menu-icon {
         line-height: 60px;
         width: 100%;
@@ -97,6 +189,65 @@ html, body {
         cursor: pointer;
         color: #fff;
         display: none;
+    }
+
+    .title-footer {
+        font-size: 24px;
+    }
+    .footer {
+        font-size: 16px;
+    }
+
+    [class*="ctrl-"] {
+        padding: 5px 10px;
+        border-radius: 0px;
+        border: 3px solid #383838;
+    }
+    [class*="ctrl-"][class*="fx-"]:hover,
+    [class*="ctrl-"][class*="fx-"].active {
+        color: #383838;
+        border-color: #383838;
+    }
+    [class*="fx-"],
+    [class*="fx-"]:hover {
+        -webkit-transition: color 0.5s  ease-in-out;
+        transition: color 0.5s  ease-in-out;
+        -webkit-transition: border-color 0.5s  ease-in-out;
+        transition: border-color 0.5s  ease-in-out;
+    }
+    [class*="fx-"]:not(.fx-dyna) {
+        position: relative;
+        z-index: 1;
+        -webkit-transition-delay: 0.2s !important;
+        transition-delay: 0.2s !important;
+        overflow: hidden;
+    }
+    [class*="fx-"]:not(.fx-dyna)::after,
+    [class*="fx-"]:not(.fx-dyna)::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .fx-sliderIn::after {
+        -webkit-transition: width 0.5s ease-in-out;
+        transition: width 0.5s ease-in-out;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 0;
+    }
+    .fx-sliderIn:hover::after,
+    .fx-sliderIn.active::after {
+        -webkit-transition: width 0.5s ease-in-out;
+        transition: width 0.5s ease-in-out;
+        width: 100%;
+    }
+    :checked + .fx-sliderIn::after,
+    .fx-sliderIn.active::after {
+        width: 300%;
     }
 
     @media(max-width: 786px) {
@@ -121,7 +272,6 @@ html, body {
         }
 
         nav ul li {
-
             box-sizing: border-box;
             width: 100%;
             padding: 24px;
@@ -133,3 +283,4 @@ html, body {
         }
 
     }
+

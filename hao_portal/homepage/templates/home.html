@@ -24,32 +24,89 @@
             Hello!
         </p>
         <br>
-        <hr>
+        <hr class="info-sep">
         <br>
         <p class="info">
             I'm Senhe Hao, a freshman at TAMU studying computer science. I enjoy doing a wide variety of things such as programming, math, playing the trumpet, writing, animation, reading, and playing video games. One of my favorite things to do is solve problems. To me there's no better feeling then what you get after finally solving something that's been frustrating you for hours. An example would be this website. This website is a massive problem. I'm not even sure I'm doing all of this right, but it seems to be working perfectly fine. Funny part is that getting the favicon to work took more time than actually making this website.
         </p>
     </div>
+    <div class="resume-area">
+        <p class="resume-title">
+            CHECK OUT MY RESUME
+        </p>
+        <br>
+        <br>
+        <hr class="resume-line">
+        <br>
+        <button class="ctrl-standard typ-subhed fx-sliderIn">Click Here</button>
+    </div>
+    <div class="content">
+        <p class="more-abt-title">
+            About Me
+        </p>
+        <br>
+        <hr class="info-sep">
+        <br>
+        <p class="more-abt-content">
+            I'm a full-stack web, desktop, and game developer proficient in languages including C++, Java, Go, Javascript, Python, and C#. Some frameworks and apis I use include Qt, Vue, Node, Express, Django, Tensorflow, OpenGL, and Gin.
+        </p>
+        <br>
+        <hr class="info-sep">
+        <br>
+        <p class="more-abt-content">
+            I was born in Yokohama, Japan and lived for a short time in China as well before moving to the United States. I was raised for most of my life in Austin, Texas and currently live at College Station.
+        </p>
+        <br>
+        <hr class="info-sep">
+        <br>
+        <p class="more-abt-content">
+            I enjoy experiencing the outdoors and going on adventures in the wilderness. During high school I was in the Scouts of America program and eventually reached Eagle. Although I got the chance to experience Northern Tier, I didn't get to trek Philmont because it burned down :(
+        </p>
+    </div>
+    <div class="links">
+        <div class="container">
+            <div class="row">
+                <p class="links-title">
+                    Links
+                </p>
+            </div>
+            <hr class="resume-line">
+            <br>
+            <div class="row">
+                <div class="col">
+                </div>
+                <div class="col">
+                </div>
+                <div class="col">
+                    <button class="ctrl-standard typ-subhed fx-sliderIn" onclick="goto_linkedin()">LinkedIn</button>
+                </div>
+                <div class="col">
+                    <button class="ctrl-standard typ-subhed fx-sliderIn" onclick="goto_github()">Github</button>
+                </div>
+                <div class="col">
+                </div>
+                <div class="col">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer content">
+        <p class="title-footer">
+            Thanks for stopping by!
+        </p>
+        <br>
+        <br>
+        <p>
+            Contact Info:
+        </p>
+        <p>
+            Phone: 512-517-2749
+        </p>
+        <p>
+            Email: SenheHao@protonmail.com
+        </p>
+    </div>
 </div>
 </body>
 </html>
-<script>
-    $(document).ready(function() {
-        $(".menu-icon").on("click", function() {
-            $("nav ul").toggleClass("showing");
-        });
-    });
-
-    // Scrolling Effect
-
-    $(window).on("scroll", function() {
-        if($(window).scrollTop()) {
-            $('nav').addClass('black');
-        }
-
-        else {
-            $('nav').removeClass('black');
-        }
-    })
-</script>
 {% endblock %}
