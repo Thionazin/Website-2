@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="{% static '/css/home.css' %}">
 <body>
 <div class="wrapper">
-    <header>
+    <header style="background-image: url({% static 'images/top.jpg' %})">
         <nav>
             <div class="menu-icon">
                 <i class="fa fa-bars fa-2x"></i>
@@ -15,7 +15,7 @@
             <div class="menu">
                 <ul>
                     <li><a href="{% url 'home' %}" class="menuselector">Home</a></li>
-                    <li><a href="{% url 'index' %}" class="menuselector">Projects</a></li>
+                    <li><a href="{% url 'index' %}" class="menuselector">Portfolio</a></li>
                     <li><a href="#" class="menuselector">Blog</a></li>
                 </ul>
             </div>
@@ -29,10 +29,10 @@
         <hr class="info-sep">
         <br>
         <p class="info">
-            I'm Senhe Hao, a freshman at TAMU studying computer science. I enjoy doing a wide variety of things such as programming, math, playing the trumpet, writing, animation, reading, and playing video games. One of my favorite things to do is solve problems. To me there's no better feeling then what you get after finally solving something that's been frustrating you for hours. An example would be this website. This website is a massive problem. I'm not even sure I'm doing all of this right, but it seems to be working perfectly fine. Funny part is that getting the favicon to work took more time than actually making this website.
+            I'm Senhe Hao, a freshman at TAMU studying computer science. I enjoy doing a wide variety of things such as programming, math, playing the trumpet, writing, animation, reading, and playing video games. One of my favorite things to do is to solve problems. To me, there's no better feeling then what you get after finally solving something that's been frustrating you for hours. An example would be this website. This website is a massive problem. It was a pain to create each page, but the site is turning out pretty well. Funny part is that getting the favicon to work took the most time.
         </p>
     </div>
-    <div class="resume-area">
+    <div class="resume-area" style="background-image: url({% static 'images/mid.jpg' %})">
         <p class="resume-title">
             CHECK OUT MY RESUME
         </p>
@@ -65,7 +65,7 @@
             I enjoy experiencing the outdoors and going on adventures in the wilderness. During high school I was in the Scouts of America program and eventually reached Eagle. Although I got the chance to experience Northern Tier, I didn't get to trek Philmont because it burned down :(
         </p>
     </div>
-    <div class="links">
+    <div class="links" style="background-image: url({% static 'images/bot.jpg' %})">
         <div class="container">
             <div class="row">
                 <p class="links-title">
@@ -106,6 +106,12 @@
         </p>
         <p>
             Email: SenheHesen@gmail.com
+        </p>
+        <p>
+            Photo Credits: eberhard grossgasteiger from Pexels, Bess Hamiti from Pexels, and Getty Images
+        </p>
+        <p>
+            Note: This website is still a work in progress. Photos are not final.
         </p>
     </div>
 </div>
