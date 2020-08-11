@@ -1,0 +1,77 @@
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/8/8b/Austin_at_night_2011.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+
+
+.ctrl-standard.fx-sliderIn {
+    color: white;
+    border-color: white;
+    background: none;
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 300;
+}
+
+.ctrl-standard.fx-sliderIn::after {
+    background: white;
+}
+
+    .typ-subhed {
+        font-family: 'Oswald', sans-serif !important;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 0;
+    }
+
+    [class*="ctrl-"] {
+        padding: 5px 10px;
+        border-radius: 0px;
+        border: 3px solid #383838;
+    }
+    [class*="ctrl-"][class*="fx-"]:hover,
+    [class*="ctrl-"][class*="fx-"].active {
+        color: #383838;
+        border-color: #383838;
+    }
+    [class*="fx-"],
+    [class*="fx-"]:hover {
+        -webkit-transition: color 0.5s  ease-in-out, border-color 0.5s  ease-in-out;
+        transition: color 0.5s  ease-in-out, border-color 0.5s  ease-in-out;
+    }
+    [class*="fx-"]:not(.fx-dyna) {
+        position: relative;
+        z-index: 1;
+        -webkit-transition-delay: 0.2s !important;
+        transition-delay: 0.2s !important;
+        overflow: hidden;
+    }
+    [class*="fx-"]:not(.fx-dyna)::after,
+    [class*="fx-"]:not(.fx-dyna)::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .fx-sliderIn::after {
+        -webkit-transition: width 0.5s ease-in-out;
+        transition: width 0.5s ease-in-out;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 0;
+    }
+    .fx-sliderIn:hover::after,
+    .fx-sliderIn.active::after {
+        -webkit-transition: width 0.5s ease-in-out;
+        transition: width 0.5s ease-in-out;
+        width: 100%;
+    }
+    :checked + .fx-sliderIn::after,
+    .fx-sliderIn.active::after {
+        width: 300%;
+    }

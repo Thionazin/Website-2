@@ -9,10 +9,3 @@ def showcase_index(request):
         'showcase': showcases
     }
     return render(request, 'showcase_index.html', context)
-
-def showcase_detail(request, pk):
-    showcase = Showcase.objects.get(pk=pk)
-    context = {
-        'showcase': showcase
-    }
-    return render(request, 'showcase_detail.html', context)

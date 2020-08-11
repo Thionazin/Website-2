@@ -1,5 +1,7 @@
 {% extends "template.html" %}
 {% block page_content %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static '/css/home.css' %}">
 <body>
 <div class="wrapper">
     <header>
@@ -12,8 +14,8 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="#" class="menuselector">Home</a></li>
-                    <li><a href="#" class="menuselector">Projects</a></li>
+                    <li><a href="{% url 'home' %}" class="menuselector">Home</a></li>
+                    <li><a href="{% url 'index' %}" class="menuselector">Projects</a></li>
                     <li><a href="#" class="menuselector">Blog</a></li>
                 </ul>
             </div>
@@ -97,13 +99,13 @@
         <br>
         <br>
         <p>
-            Contact Info:
+            Spam me:
         </p>
         <p>
             Phone: 512-517-2749
         </p>
         <p>
-            Email: SenheHao@protonmail.com
+            Email: SenheHesen@gmail.com
         </p>
     </div>
 </div>
