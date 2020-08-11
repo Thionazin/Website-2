@@ -37,7 +37,7 @@ header {
         border-color: #383838;
     }
     [class*="fx-"],
-    [class*="fx-"]:hover {
+    [class*="fx-"]:hover, [class*="fx-"]:active {
         -webkit-transition: color 0.5s  ease-in-out, border-color 0.5s  ease-in-out;
         transition: color 0.5s  ease-in-out, border-color 0.5s  ease-in-out;
     }
