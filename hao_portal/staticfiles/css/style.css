@@ -207,6 +207,10 @@ html, body {
         font-size: 16px;
     }
 
+    .mar-bottom {
+        margin-bottom: 20px;
+    }
+
     @media(max-width: 786px) {
 
         .logo {
