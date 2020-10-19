@@ -30,6 +30,16 @@ html, body {
         text-align: justify;
     }
 
+
+    .content-2 {
+        width: 94%;
+        margin: 4em auto;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: justify;
+        background: gray;
+    }
+
     .resume-area {
         height: 320px;
         line-height: 30px;
@@ -211,6 +221,11 @@ html, body {
         margin-bottom: 20px;
     }
 
+    .more-abt-subtitle {
+        font-size: 36px;
+        text-align: center;
+    }
+
     @media(max-width: 786px) {
 
         .logo {
@@ -244,9 +259,3 @@ html, body {
         }
 
     }
-
-    .more-abt-semester{
-        text-align: center;
-        font-size: 36px;
-    }
-
