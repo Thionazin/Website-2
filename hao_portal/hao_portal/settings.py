@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'showcase',
     'homepage',
     'blog',
+    'aanda',
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,43 @@
+{% extends "template.html" %}
+{% load static %}
+{% block page_content %}
+<link rel="stylesheet" type="text/css" href="{% static '/css/academics.css' %}">
+<body>
+<div class="wrapper">
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo">
+                Senhe Hao
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="{% url 'home' %}" class="menuselector">Home</a></li>
+                    <li><a href="{% url 'index' %}" class="menuselector">Portfolio</a></li>
+                    <li><a href="{% url 'academics' %}" class="menuselector">Academics and Achievements</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="card showcase-card">
+                <div class="card-body">
+                    <h4 class="card-title">Coursework</h4>
+                    <br>
+                    <p class="more-abt-semester">
+                        aaaaaa:
+                    </p>
+                    <br>
+                    <hr class="info-sep">
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
