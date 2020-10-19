@@ -14,6 +14,11 @@ html, body {
         height: 20vh;
     }
 
+    .more-abt-subtitle{
+        text-align: center;
+        font-size: 36px;
+    }
+
     .menuselector:hover {
         text-decoration: none;
     }
@@ -219,11 +224,6 @@ html, body {
 
     .mar-bottom {
         margin-bottom: 20px;
-    }
-
-    .more-abt-subtitle {
-        font-size: 36px;
-        text-align: center;
     }
 
     @media(max-width: 786px) {
