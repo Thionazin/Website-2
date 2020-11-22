@@ -4,3 +4,8 @@ header {
     background: url(https://www.chem.tamu.edu/gsac/images/Banner%20image%20-%20watertower.jpg) no-repeat 50% 50%;
     background-size: cover;
 }
+
+.more-abt-subtitle {
+    text-align: center;
+    font-size: 36px;
+}
